@@ -27,8 +27,6 @@
 
 .box-comment .btn-primary {
     float: right;
-    border-radius: 3px;
-    margin-top: 8px;
     font-size: 12px;
 }
 
@@ -132,7 +130,6 @@
     background: #f0f0f0;
     width: 100%;
     padding: 10px;
-    border-radius: 3px;
     font-size: 12px;
     border: 1px solid #ddd;
     min-height: 60px;
@@ -142,7 +139,6 @@
 
 .action-comment-reply button {
     background: $brand-primary;
-    border-radius: 3px;
     color: #fff;
     border: none;
     padding: 7px 15px;

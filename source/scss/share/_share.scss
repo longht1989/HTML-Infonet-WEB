@@ -1,12 +1,14 @@
 /* button border  */
 
 .btn {
-    font-size: 14px; // -webkit-border-radius: 0px;
-    // -moz-border-radius: 0px;
-    // -ms-border-radius: 0px;
-    // -o-border-radius: 0px;
-    // border-radius: 0px;
-    @include transition(background-color, 0.2, ease-out);
+    font-size: 14px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    transition: all 0.2s ease;
+    border: none;
 
     .fa {
         margin-right: 5px;
@@ -19,6 +21,23 @@
 
     @include haf {
         outline: none;
+    }
+
+    &-primary {
+        border-bottom: 2px solid darken($brand-primary, 10%);
+
+        &:hover {
+            background-color: darken($brand-primary, 5%);
+        }
+
+        &:active:focus,
+        &:focus:active,
+        &:focus,
+        &:active {
+            border-bottom: 0px solid darken($brand-primary, 10%);
+            margin-top: 2px;
+        }
+
     }
 }
 
@@ -36,11 +55,11 @@
 }
 
 .form-control {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
 
     &:focus {
         border-color: darken($brand-primary, 15%);

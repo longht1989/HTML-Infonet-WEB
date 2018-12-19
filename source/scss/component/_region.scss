@@ -22,7 +22,7 @@
             font-size: 14px;
             line-height: 25px;
             transition: all 0.2s linear;
-            display: inline-block;
+            display: block;
             padding: 0 10px;
             border-left: 8px solid #444;
             position: relative;
@@ -208,9 +208,9 @@
         border: 1px solid #ddd;
 
         .zone__header {
-            border-bottom: 1px solid #ddd;
+            border-bottom: 2px solid darken($brand-primary, 10%);
             background-color: $brand-primary;
-            margin-bottom: 0;
+            margin: -1px -1px 0;
 
             .zone__title {
                 a {
@@ -233,7 +233,7 @@
         }
 
         .zone__content {
-            padding: 10px;
+            padding: 10px 10px 0;
         }
     }
 

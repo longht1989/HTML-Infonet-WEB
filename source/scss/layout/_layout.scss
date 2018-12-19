@@ -23,7 +23,6 @@
 //event
 .tool-bar {
     @include clearfix;
-    margin-bottom: 10px;
 }
 
 .event-wrap {
@@ -44,6 +43,11 @@
 .story--highlight {
     float: left;
     width: 440px;
+
+    .site-category & {
+        float: none;
+        width: inherit;
+    }
 }
 
 .latest-listing {
@@ -251,6 +255,10 @@
 
         .column--half & {
             float: left;
+        }
+
+        .story {
+            margin-bottom: 0;
         }
     }
 }

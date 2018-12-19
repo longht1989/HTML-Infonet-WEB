@@ -24,11 +24,7 @@
             float: left;
             line-height: 15px;
             display: inline-block;
-            opacity: 0.5;
-            transition: all 0.2s linear;
-            &:hover{
-                opacity: 1;
-            }
+
             &+a {
                 margin-left: 10px;
 
@@ -43,7 +39,15 @@
             .img-responsive {
                 display: inline-block;
                 height: 15px;
+                opacity: 0.5;
+                transition: all 0.2s linear;
                 width: auto;
+            }
+
+            &:hover {
+                .img-responsive {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -136,7 +140,7 @@
     &__nav {
         background: white;
         border-bottom: 2px solid $brand-primary;
-
+        margin-bottom: 10px;
         &.affix {
             top: 0;
             right: 0;

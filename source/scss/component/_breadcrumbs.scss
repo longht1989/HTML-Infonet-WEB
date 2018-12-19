@@ -37,20 +37,20 @@
 }
 
 .breadcrumbs {
-    font-family: $font-family-serif;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     position: relative;
+    text-transform: uppercase;
+    font-weight: normal;
 
     .cate {
-        font-size: 14px;
+        font-size: 20px;
         display: inline-block;
-        font-weight: bold;
 
         a {
-            color: #777;
+            color: $brand-primary;
 
             &:hover {
-                color: $brand-primary;
+                color: #777;
             }
         }
 
@@ -75,7 +75,28 @@
     }
 
     .subcate {
-        font-size: 12px;
         display: inline-block;
+        font-size: 14px;
+        margin-left: 10px;
+
+        &::before {
+            content: "/";
+            display: inline-block;
+            opacity: 0.8;
+            color: #000000;
+            padding-right: 10px;
+        }
+
+        a {
+            opacity: 0.8;
+            color: #000000;
+            line-height: 24px;
+            transition: all 0.2s linear;
+
+            &:hover {
+                opacity: 1;
+                color: $brand-primary;
+            }
+        }
     }
 }
