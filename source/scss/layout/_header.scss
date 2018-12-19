@@ -1,0 +1,228 @@
+/* ====================================   Header's style   ==================================== */
+
+#site-header {
+    @include clearfix();
+    margin-bottom: 20px;
+    z-index: 10;
+    position: relative;
+
+    @include breakpoint(768px, 1024px) {
+        width: 1080px;
+    }
+}
+
+.site-header {
+    .topbar {
+        @include clearfix();
+        height: 35px;
+        background-color: #ECECEC;
+        padding: 10px 0;
+    }
+
+    .links {
+        a {
+            float: left;
+            line-height: 15px;
+            display: inline-block;
+            opacity: 0.5;
+            transition: all 0.2s linear;
+            &:hover{
+                opacity: 1;
+            }
+            &+a {
+                margin-left: 10px;
+
+                &::before {
+                    content: "•";
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: #a4a4a4;
+                }
+            }
+
+            .img-responsive {
+                display: inline-block;
+                height: 15px;
+                width: auto;
+            }
+        }
+    }
+
+    .hotline {
+        float: right;
+        font-size: 12px;
+
+        span {
+            opacity: 0.5;
+            color: #000000;
+        }
+
+        b {
+            border-radius: 3px;
+            color: white;
+            padding: 3px 5px;
+            background-color: $brand-primary;
+            opacity: 1;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+    }
+
+    .search {
+        float: right;
+        width: 200px;
+        position: relative;
+        background: #FFFFFF;
+        border: 1px solid #ECECEC;
+        border-radius: 2px;
+
+        input {
+            width: 100%;
+            border: 1px solid transparent;
+            font-size: 12px;
+            padding: 0 4px;
+            color: $gray-light;
+            line-height: 24px;
+            height: 28px;
+            transition: all 0.2s linear;
+
+            &:hover {
+                border-color: #ccc;
+
+            }
+
+            &:focus {
+                outline: none;
+                border-color: $brand-primary;
+            }
+
+        }
+
+        .sprite-search {
+            position: absolute;
+            right: 8px;
+            top: 6px;
+        }
+    }
+
+    .content {
+        padding: 10px 0;
+        border-bottom: 1px solid #ECECEC;
+        background-color: #F7F7F7;
+
+        .logo {
+            float: left;
+            height: 30px;
+
+            a {
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+                vertical-align: baseline;
+            }
+        }
+
+        .qc {
+            float: right;
+            margin-bottom: 0;
+        }
+    }
+
+    &__nav {
+        background: white;
+        border-bottom: 2px solid $brand-primary;
+
+        &.affix {
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+        }
+    }
+}
+
+.navigator {
+    @include clearfix();
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-left: -5px;
+    margin-right: -5px;
+
+    >li {
+        float: left;
+        position: relative;
+
+        a {
+            display: block;
+            padding: 0 8px;
+            transition: background 0.2s linear, color 0.2s linear;
+            color: $gray-base;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $brand-primary;
+                background-color: #f7f7f7;
+            }
+        }
+
+        &:hover {
+            background-color: #f7f7f7;
+
+            .navigator__child {
+                left: auto;
+            }
+
+            .navigator__search {
+                right: 0;
+            }
+        }
+
+        &:first-child {
+            .sprite-home {
+                position: relative;
+                top: -2px;
+            }
+
+            &:hover,
+            &.is-active {
+                .sprite-home {
+                    background-position-y: -100px;
+                }
+            }
+        }
+
+        &.is-active {
+            a {
+                color: $brand-primary;
+                background-color: #f7f7f7;
+            }
+        }
+    }
+
+    &__child {
+        position: absolute;
+        top: 100%;
+        left: -999em;
+        width: 220px;
+        z-index: 2;
+        text-align: left;
+
+        >li {
+            a {
+                background-color: #f7f7f7;
+
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+            }
+        }
+    }
+}
+
+// video page Header

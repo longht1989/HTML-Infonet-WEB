@@ -1,0 +1,474 @@
+#modal-content>div>label {
+    width: 50%;
+    float: left
+}
+
+// COMMENT
+.box-comment {
+    margin-top: 20px;
+}
+
+.box-comment h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-family: $font-family-serif;
+    font-weight: bold;
+}
+
+.box-comment .input {
+    @include clearfix();
+}
+
+.box-comment .note {
+    color: #777;
+    margin-top: 4px;
+}
+
+.box-comment .btn-primary {
+    float: right;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.box-comment .inner-comment {
+    border-bottom: 1px dashed #dedede;
+    @include clearfix();
+}
+
+.box-comment .topic-comment {
+    padding: 15px 0 10px 0;
+    @include clearfix();
+}
+
+.box-comment .sub-comment {
+    @include clearfix();
+    margin-left: 32px;
+    padding: 0 0 15px 0;
+}
+
+.box-comment .topic-comment .avatar-comment,
+.box-comment .sub-comment .avatar-comment {
+    float: left;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d7d7d7;
+}
+
+.box-comment .topic-comment .avatar-comment i,
+.box-comment .sub-comment .avatar-comment i {
+    font-size: 14px;
+}
+
+.box-comment .topic-comment .content-comment {
+    // float: right;
+    border-bottom: 1px dashed #dedede;
+    padding-bottom: 10px;
+}
+
+.box-comment .sub-comment .content-comment {
+    // float: right;
+    // width: 540px;
+}
+
+.box-comment .topic-comment .content-comment .info-author,
+.box-comment .sub-comment .content-comment .info-author {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3B5998;
+}
+
+.box-comment .topic-comment .content-comment .info-author span,
+.box-comment .sub-comment .content-comment .info-author span {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.box-comment .topic-comment .content-comment p,
+.box-comment .sub-comment .content-comment p,
+.box-comment .topic-comment .content-comment,
+.box-comment .sub-comment .content-comment {
+    font-size: 14px;
+    padding: 0 0 5px 0;
+}
+
+.box-comment .topic-comment .content-comment .action-comment a,
+.box-comment .sub-comment .content-comment .action-comment a {
+    color: #3B5998;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.box-comment .topic-comment .content-comment .action-comment a.cmt-like-ed,
+.box-comment .sub-comment .content-comment .action-comment a.cmt-like-ed {
+    color: #999;
+}
+
+.box-comment .topic-comment .content-comment .action-comment a i,
+.box-comment .sub-comment .content-comment .action-comment a i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.box-comment .inner-comment.no-sub-comment .topic-comment .content-comment {
+    border-bottom: none;
+}
+
+.box-comment .inner-comment.no-sub-comment.last-comment {
+    border-bottom: none;
+}
+
+.action-comment-reply {
+    margin-top: 10px;
+    position: relative;
+    @include clearfix();
+}
+
+.action-comment-reply:after {}
+
+.action-comment-reply textarea {
+    background: #f0f0f0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    min-height: 60px;
+    margin-bottom: 8px;
+    box-shadow: none;
+}
+
+.action-comment-reply button {
+    background: $brand-primary;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    float: right;
+}
+
+// article comment box 
+.article-comments {
+    background: url(../images/double-line-2.png) repeat-x top left;
+    margin-top: 20px;
+}
+
+.article-comments .title {
+    color: #ba1b1e;
+    font-size: 16px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 0;
+}
+
+.article-comments .input {
+    padding: 15px 0 10px 0;
+}
+
+.article-comments .input .note {
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+}
+
+.article-comments .btn {
+    background: #ba1b1e;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: right;
+}
+.box-comment .input textarea{
+    margin: 16px 0 8px;
+}
+
+.article-comments .input textarea,
+.article-comments .reply textarea {
+    background: #efefef;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #eee;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+.article-comments .reply {
+    position: relative;
+    margin-top: 15px;
+}
+
+.article-comments .reply:after {
+    bottom: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(235, 235, 235, 0);
+    border-bottom-color: #ebebeb;
+    border-width: 7px;
+    margin-left: -7px;
+}
+
+.article-comments .user .avatar {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #d7d7d7;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.article-comments .user .avatar .fa {
+    line-height: 36px;
+}
+
+.article-comments .user .comment {
+    border-bottom: 1px dashed #dedede;
+    padding-bottom: 10px;
+}
+
+.article-comments .user .comment:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.article-comments .user .comment+.comment {
+    margin-top: 10px;
+}
+
+.article-comments .user .content {
+    float: left;
+    width: 700px;
+    margin-bottom: 15px;
+}
+
+.article-comments .user .comment:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article-comments .user .comment:last-child .content {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.article-comments .user .name {
+    font-weight: 700;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.article-comments .user .name span {
+    font-weight: normal;
+    font-weight: 300;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.article-comments .user .text {
+    font-size: 13px;
+    padding: 0 0 10px 0;
+}
+
+.article-comments .user .sub-comments {
+    clear: both;
+    margin-left: 48px;
+    padding: 15px 0;
+    border-top: 1px dashed #dedede;
+}
+
+.article-comments .user .sub-comments .content {
+    width: 655px;
+}
+
+.article-comments .user .sub-comments .comment {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.article-comments .comment-actions a {
+    color: #ba1b1e;
+    font-weight: 300;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.article-comments .comment-actions a .fa {
+    margin-right: 2px;
+    display: inline-block;
+}
+
+.article-comments .btnLike.active {
+    color: #999;
+}
+
+#dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 9999999;
+    display: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+}
+
+#dialog>div {
+    max-width: 600px;
+    width: 80%;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .4)
+}
+
+#dialog .header {
+    font-size: 1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    background: #ba1b1e;
+    color: #fff
+}
+
+#dialog .content {
+    padding: 20px 15px;
+    font-size: .9em;
+    line-height: 1.4
+}
+
+#dialog .content>div,
+#dialog .content>form {
+    width: 100%;
+    margin-top: 5px
+}
+
+#dialog .content>div p {
+    margin-bottom: 10px
+}
+
+#dialog .content label {
+    display: block;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px
+}
+
+#dialog .content input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px
+}
+
+#dialog .content input[type=radio] {
+    position: relative;
+    top: -2px
+}
+
+#dialog .content form label {
+    text-transform: none;
+    color: #555;
+    font-size: 1em;
+    padding: 5px 0;
+    border-radius: 5px
+}
+
+#dialog .content form p {
+    margin: 8px 0
+}
+
+#dialog .content p.label {
+    text-transform: uppercase;
+    color: #555;
+    font-size: 1.2em
+}
+
+#dialog .content blockquote {
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 1.2;
+    margin: 5px 20px 15px
+}
+
+#dialog .content blockquote.error {
+    color: red
+}
+
+#dialog .content textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 3px
+}
+
+#dialog .action {
+    text-align: center;
+    padding: 5px 0;
+    background: #eee
+}
+
+#dialog .action button {
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    white-space: nowrap
+}
+
+#dialog .action button.btnSubmit,
+#dialog .action button:hover {
+    border-color: #ba1b1e;
+    color: #ba1b1e
+}
+
+#dialog .action button.btnSubmit {
+    display: none
+}
+
+#dialog table {
+    border: 1px solid #ccc
+}
+
+#dialog table th {
+    background-color: #15a1b1;
+    color: #fff;
+    text-align: center
+}
+
+#dialog table td {
+    padding: 5px
+}

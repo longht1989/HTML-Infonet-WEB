@@ -1,0 +1,148 @@
+/* button border  */
+
+.btn {
+    font-size: 14px; // -webkit-border-radius: 0px;
+    // -moz-border-radius: 0px;
+    // -ms-border-radius: 0px;
+    // -o-border-radius: 0px;
+    // border-radius: 0px;
+    @include transition(background-color, 0.2, ease-out);
+
+    .fa {
+        margin-right: 5px;
+    }
+
+    &:active:focus,
+    &:focus:active {
+        outline: none;
+    }
+
+    @include haf {
+        outline: none;
+    }
+}
+
+.btn-border {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #333;
+    @include transition(all, 0.2, ease-out);
+
+    @include haf() {
+        background-color: #111;
+        color: white;
+        border-color: #111;
+    }
+}
+
+.form-control {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+
+    &:focus {
+        border-color: darken($brand-primary, 15%);
+    }
+}
+
+// social listing
+.social-listing {
+    font-size: 0;
+
+    .fa {
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 2px;
+        margin: 0 4px;
+        color: white;
+        @include transition(background, 0.2, linear);
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+
+        &:hover {
+            background: darken(#3B5998, 10%);
+        }
+    }
+
+    .fa-twitter {
+        background: #0084B4;
+
+        &:hover {
+            background: darken(#0084B4, 10%);
+        }
+    }
+
+    .fa-google-plus {
+        background: #D34836;
+
+        &:hover {
+            background: darken(#D34836, 10%);
+        }
+    }
+
+    .fa-envelope {
+        background: #999999;
+
+        &:hover {
+            background: darken(#999999, 10%);
+        }
+    }
+
+    &.floating-right {
+        position: fixed;
+        top: 238px;
+        right: 50%;
+        margin-right: -570px;
+
+        >li {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.view-more {
+    font-size: 16px;
+    line-height: 2.1rem;
+    color: $brand-primary;
+    margin-top: 16px;
+    text-align: center;
+
+    .sprites {
+        vertical-align: text-bottom;
+        margin-right: 4px;
+    }
+
+    &-article {
+        color: #bfbfbf;
+        font-size: 12px;
+
+        .sprites {
+            margin-right: 0;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.modal {
+    z-index: 9999;
+
+    &-dialog {
+        @include breakpoint(sm) {
+            margin-top: 10%;
+        }
+    }
+}
+
+/*lazy load image */
+img.loading {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}

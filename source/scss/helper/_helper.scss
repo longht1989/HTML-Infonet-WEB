@@ -1,0 +1,18 @@
+.link-primary {
+    color: $brand-primary;
+    @include transition(color, 0.2, ease);
+
+    @include haf {
+        color: $brand-success;
+    }
+}
+
+.has-border-top {
+    padding-top: 20px;
+    border-top: 1px solid $gray-light;
+}
+
+.has-border-bottom {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-light;
+}
