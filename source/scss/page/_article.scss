@@ -3,7 +3,7 @@
 // normal detail
 .article {
     &-main {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     &__header {
@@ -710,123 +710,12 @@
 
     &__footer {
         clear: both;
+
         .zone {
             margin: 16px 0 0;
             background-color: #f7f7f7;
             padding: 16px 16px 0;
             border-radius: 5px;
-        }
-    }
-
-    .site-content.is-full & {
-        &__header {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 8px;
-            max-width: 796px;
-
-            @include breakpoint(md) {
-                max-width: 796px;
-                padding: 0;
-            }
-        }
-
-        &__summary {
-            text-align: justify;
-        }
-
-        &__content {
-            line-height: 1.7;
-
-            .notification {
-                padding: 12px;
-            }
-
-            .full-img {
-                text-align: center;
-                max-width: initial;
-
-                img {
-                    display: inline-block;
-                    max-width: 100%;
-                    height: auto;
-                }
-
-                .fig {
-                    padding: 0 12px;
-                }
-            }
-
-            table.full-img {
-                max-width: initial !important;
-            }
-
-            .half-img {
-                width: 400px;
-
-                &.is-left {
-                    margin-left: -200px;
-                    float: left;
-                }
-
-                &.is-right {
-                    margin-right: -200px;
-                    float: right;
-                }
-            }
-
-            .full-text,
-            .notification,
-            .quote,
-            .quotes,
-            &>p,
-            &>div,
-            &>h3,
-            &>h4,
-            &>h5 {
-                max-width: 768px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .full-text,
-            p {
-                padding: 0 12px;
-            }
-
-            .cms-body {
-                max-width: initial;
-
-                &>p,
-                &>div,
-                &>h3,
-                &>h4,
-                &>h5 {
-                    max-width: 768px;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                .full-img {
-                    max-width: initial;
-                }
-            }
-
-            table.contentimg {
-                width: 100%;
-
-                .fbShareImage {
-                    display: inline-block;
-                }
-            }
-        }
-
-        &__footer {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 12px;
-            max-width: 796px;
         }
     }
 
@@ -871,6 +760,12 @@
         .article__summary {
             color: #c2c2c2;
             font-weight: normal;
+        }
+    }
+    &--full {
+        .article__content {
+            width: 100%;
+            float: none;
         }
     }
 }
