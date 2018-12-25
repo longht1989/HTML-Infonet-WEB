@@ -220,6 +220,7 @@
         .picture {
             margin-bottom: 10px;
             text-align: center;
+
             .caption {
                 padding-top: 5px;
                 font-style: italic;
@@ -303,26 +304,42 @@
 
         /* -------------- */
         .box-relate,
-        .notification {
+        .notification,
+        .notebox {
             clear: both;
             padding: 12px;
             background: #F0F0F0;
             border: 1px dashed $brand-primary;
             font-style: italic;
             border-radius: 5px;
+            margin-bottom: 10px;
 
             &.pull-left,
-            &.floatleft {
+            &.floatleft,
+            &.nleft {
                 float: left;
                 width: 50%;
                 margin-right: 10px;
             }
 
             &.pull-right,
-            &.floatright {
+            &.floatright,
+            &.nright {
                 float: right;
                 width: 50%;
                 margin-left: 10px;
+            }
+        }
+
+        .notebox {
+            &.ncenter {
+                min-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            td {
+                padding: 10px;
             }
         }
 
@@ -337,7 +354,8 @@
         /* quote */
         .quote,
         .quotes,
-        .inner-quote {
+        .inner-quote,
+        .Blockquote {
             font-family: $font-family-serif;
             clear: both;
             border-radius: 5px;
@@ -382,7 +400,8 @@
         }
 
         table.quote,
-        table.quotes {
+        table.quotes,
+        .Blockquote {
             margin-bottom: 16px;
 
             td {
