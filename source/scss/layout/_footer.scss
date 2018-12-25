@@ -1,7 +1,11 @@
 .site-footer {
-    padding: 20px 0;
     margin-top: 20px;
     background: #3D3D48;
+
+    .site-wrap {
+        padding: 20px 0;
+        background: #3D3D48;
+    }
 
     .tools {
         margin-bottom: 20px;

@@ -16,7 +16,11 @@
         @include clearfix();
         height: 35px;
         background-color: #ECECEC;
-        padding: 10px 0;
+
+        .site-wrap {
+            padding: 10px 0;
+            background-color: #ECECEC;
+        }
     }
 
     .links {
@@ -110,9 +114,13 @@
     }
 
     .content {
-        padding: 10px 0;
         border-bottom: 1px solid #ECECEC;
         background-color: #F7F7F7;
+
+        .site-wrap {
+            background-color: #F7F7F7;
+            padding: 10px 0;
+        }
 
         .logo {
             float: left;
@@ -141,6 +149,7 @@
         background: white;
         border-bottom: 2px solid $brand-primary;
         margin-bottom: 10px;
+
         &.affix {
             top: 0;
             right: 0;
