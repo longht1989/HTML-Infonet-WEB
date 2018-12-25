@@ -216,6 +216,16 @@
             float: left;
         }
 
+        /* old style picture box */
+        .picture {
+            margin-bottom: 10px;
+            text-align: center;
+            .caption {
+                padding-top: 5px;
+                font-style: italic;
+            }
+        }
+
         /* -------------- */
         .article-photo.inlinephoto {
             display: block;
@@ -762,6 +772,7 @@
             font-weight: normal;
         }
     }
+
     &--full {
         .article__content {
             width: 100%;

@@ -7,18 +7,18 @@
     @include clearfix;
     display: block;
     margin-top: 24px;
+    text-align: right;
     li {
         display: inline-block;
         >a {
             background-color: white;
             border: none;
             @include transition(all, 0.2, linear);
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
             padding: 0;
             text-align: center;
-            border-radius: 50%;
             background: #EEEEEE;
         }
         &.active,

@@ -16,7 +16,8 @@
     &__title {
         float: left;
 
-        a {
+        a,
+        span {
             color: #FFFFFF;
             background-color: $brand-primary;
             font-size: 14px;
