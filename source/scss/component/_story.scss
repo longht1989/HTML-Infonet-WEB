@@ -290,6 +290,13 @@
         }
     }
 
+    &--sponsor {
+        .story__meta {
+            color: $brand-primary;
+            opacity: 0.8;
+        }
+    }
+
     .zone--grey & {
         margin-bottom: 0;
     }
